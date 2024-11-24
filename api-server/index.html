@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="form-section">
+      <h1 class="title">Actividad</h1>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Agregar nueva tarea" required>
+        <button type="submit">Agregar</button>
+      </form>
+      <button id="clear-all" class="btn-danger">Eliminar Todo</button>
+    </section>
+
+    <section id="todo-list" class="todo-list"></section>
+  </main>
+
+  <div id="notification" class="notification"></div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
